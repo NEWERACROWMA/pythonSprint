@@ -1,4 +1,4 @@
-# SPRIN 1 | COMPUTITIONAL THINKING WITH PYTHON
+# SPRINT 1 | COMPUTITIONAL THINKING WITH PYTHON
 SPRINT 1 dedicada a matéria de Computitional Thinking with Python
 
 ## Nome e RM:
