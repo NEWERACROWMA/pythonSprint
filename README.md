@@ -2,13 +2,13 @@
 SPRINT 1 dedicada a matéria de Computitional Thinking with Python
 
 ## Nome e RM:
-### Gabriel Terra Lilla dos Santos | 554575
+#### Gabriel Terra Lilla dos Santos | 554575
 
-### Ricardo Cerazi di Tilia | 555155
+#### Ricardo Cerazi di Tilia | 555155
 
-### Marcos Vinicius Silva Costa | 555490
+#### Marcos Vinicius Silva Costa | 555490
 
-### Lucas Derenze Simidu | 555931
+#### Lucas Derenze Simidu | 555931
 
 --------------------------------------------------------------------------
 
