@@ -17,6 +17,13 @@ SPRINT 1 dedicada a matéria de Computitional Thinking with Python
 # O que iremos fazer?
 
 ## 1. Introdução ao Cliente
+### -> Perguntar nome de Usuário, Email e Idade
+
+## 2. BET
+### -> ???
+
+## 3. Loja de NFTs
+### -> Lista com itens e loja de NFTs de corredores e seus carros, com suas estatísticas (ADM?)
 
 
 
