@@ -14,5 +14,9 @@ SPRINT 1 dedicada a matéria de Computitional Thinking with Python
 
 ## Detalhes do projeto, instruções de uso, requisitos, dependências e demais infromações.
 
+# O que iremos fazer?
+
+## 1. Introdução ao Cliente
+
 
 
