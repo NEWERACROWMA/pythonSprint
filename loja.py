@@ -1,8 +1,6 @@
 from funcoes import Escolha
 from listas import listaProdutos, iden, produto_dict, opcoes
 
-
-
 print('Olá, bem vindo a nossa Loja Virtual!')
 opc = Escolha(opcoes, 'Você deseja continuar ou voltar para a tela inicial? \n(continuar/sair) -> ')
 

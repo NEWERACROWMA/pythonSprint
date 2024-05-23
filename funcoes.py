@@ -5,11 +5,7 @@ def Escolha(lista_opcoes, msg):
     return escolha
 #PAGINA DE BET
 
-equipes = ['Mahindra Racing', 'Jaguar TCS Racing', 'Maserati MSG Racing', 'Nissan Formula E Team']
-Mahindra_corredores = ['Edoardo Mortara','Nick De Vries']
-Jaguar_corredores = ['Mitch Evans','Nick Cassidy']
-Maserati_corredores = ['Jehan Daruvala','Maximilian Gunther'] 
-Nissan_corredores = ['Oliver Rowland','Sacha fenestraz']
+from listas import equipes, Mahindra_corredores, Jaguar_corredores, Maserati_corredores, Nissan_corredores
 
 def obter_resposta():
     while True:
