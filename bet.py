@@ -1,4 +1,4 @@
-from funcoes import Obter_times, Obter_resposta, Obter_corredores
+from funcoes import Obter_times, Obter_resposta
 
 print("Bem vindo à nossa aba de apostas da Formula-E!")
 

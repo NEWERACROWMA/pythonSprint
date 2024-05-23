@@ -1,4 +1,4 @@
-sobre = input('Deseja saber sobre nós? [S/N] ').upper()
+sobre = input('Deseja saber sobre nós? [S/N] \n ---> ').upper()
 if sobre == 'S':
     print('O Grupo Mahindra, fundado em 1945, é uma das maiores e mais admiradas federações multinacionais de empresas,'
            'com 260.000 funcionários em mais de 100 países. Ele ocupa uma posição de liderança no setor de equipamentos agrícolas, '
