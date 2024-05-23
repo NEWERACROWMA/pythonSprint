@@ -3,11 +3,11 @@ def Escolha(lista_opcoes, msg):
     while escolha not in lista_opcoes:
         escolha = input(msg)
     return escolha
-#PAGINA DE BET
 
+#PAGINA DE BET
 from listas import equipes, Mahindra_corredores, Jaguar_corredores, Maserati_corredores, Nissan_corredores
 
-def obter_resposta():
+def Obter_resposta():
     while True:
         resposta = input(f"Em qual equipe você deseja apostar?\n{', '.join(equipes)}\n--> ")
         if resposta in equipes:
@@ -15,7 +15,7 @@ def obter_resposta():
         else:
             print("Essa equipe não existe, escolha uma opção válida")
 
-def obter_aposta():
+def Obter_times():
     while True:
         aposta = input("Quanto você deseja apostar?\n--> ")
         if aposta.isnumeric():

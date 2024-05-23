@@ -8,6 +8,7 @@ produto_dict = dict(zip(iden, listaProdutos))
 
 opcoes = ['continuar', 'sair']
 
+#Pagina de Bet
 equipes = ['Mahindra Racing', 'Jaguar TCS Racing', 'Maserati MSG Racing', 'Nissan Formula E Team']
 Mahindra_corredores = ['Edoardo Mortara','Nick De Vries']
 Jaguar_corredores = ['Mitch Evans','Nick Cassidy']
