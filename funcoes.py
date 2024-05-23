@@ -5,6 +5,8 @@ def Escolha(lista_opcoes, msg):
     return escolha
 
 #PAGINA DE BET
+
+#PAGINA DE BET
 from listas import equipes, Mahindra_corredores, Jaguar_corredores, Maserati_corredores, Nissan_corredores
 
 def Obter_resposta():
