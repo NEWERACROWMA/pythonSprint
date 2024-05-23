@@ -1,12 +1,4 @@
-def Escolha(lista_opcoes, msg):
-    escolha = input(msg)
-    while escolha not in lista_opcoes:
-        escolha = input(msg)
-    return escolha
-
-#PAGINA DE BET
-
-from listas import equipes, Mahindra_corredores, Jaguar_corredores, Maserati_corredores, Nissan_corredores
+from listas.lista_BET import equipes, Mahindra_corredores, Jaguar_corredores, Maserati_corredores, Nissan_corredores
 
 def Obter_resposta():
     while True:
