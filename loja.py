@@ -1,6 +1,6 @@
-from funções.funcao_BET import Escolha
-from listas.lista_BET import listaProdutos, iden, produto_dict, qtdProd, opcoes
-from listas.lista_BET import prodCorrida, prodEquipe, prodPiloto, prodPista, prodVeiculo, prodVelocidade, prodVolta
+from funcao_loja import Escolha
+from lista_loja import listaProdutos, iden, produto_dict, qtdProd, opcoes
+from lista_loja import prodCorrida, prodEquipe, prodPiloto, prodPista, prodVeiculo, prodVelocidade, prodVolta
 
 print('Olá, bem vindo a nossa Loja Virtual!')
 opc = Escolha(opcoes, 'Você deseja continuar ou voltar para a tela inicial? \n(continuar/sair) -> ')

@@ -1,4 +1,4 @@
-from funcoes.funcao_main import obter_dados_usuario, confirmar_dados, exibir_menu
+from funcao_main import obter_dados_usuario, confirmar_dados, exibir_menu
 
 def main():
     nome, email, idade = obter_dados_usuario()
