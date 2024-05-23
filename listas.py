@@ -1,3 +1,5 @@
+
+
 listaProdutos = ['NFT1', 'NFT2', 'NFT3']
 
 iden = ['1', '2', '3']
@@ -22,10 +24,7 @@ produto_dict = dict(zip(iden, listaProdutos))
 
 opcoes = ['continuar', 'sair']
 
-#Pagina de Bet
-
-
-#LISTAS DA BET
+#Pagina de Bet (Lista da Bet)
 
 equipes = ['Mahindra Racing', 'Jaguar TCS Racing', 'Maserati MSG Racing', 'Nissan Formula E Team']
 
