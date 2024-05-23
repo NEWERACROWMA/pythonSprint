@@ -3,6 +3,7 @@ def Escolha(lista_opcoes, msg):
     while escolha not in lista_opcoes:
         escolha = input(msg)
     return escolha
+
 #PAGINA DE BET
 
 from listas import equipes, Mahindra_corredores, Jaguar_corredores, Maserati_corredores, Nissan_corredores

@@ -1,5 +1,6 @@
 from funcoes import Escolha
-from listas import listaProdutos, iden, produto_dict, opcoes
+from listas import listaProdutos, iden, produto_dict, qtdProd, opcoes
+from listas import prodCorrida, prodEquipe, prodPiloto, prodPista, prodVeiculo, prodVelocidade, prodVolta
 
 print('Olá, bem vindo a nossa Loja Virtual!')
 opc = Escolha(opcoes, 'Você deseja continuar ou voltar para a tela inicial? \n(continuar/sair) -> ')
@@ -15,7 +16,17 @@ else:
     opcNft = Escolha(iden,'Deseja visualizar algum dos NFTs?\nSelecione -> ')
 
     if opcNft in produto_dict:
-        print(f'{opcNft}. {produto_dict[opcNft]}')
+        index = iden.index(opcNft)  # Obtém o índice do NFT selecionado
+        print("----- INFORMAÇÕES DO NFT -----")
+        print("NFT:", listaProdutos[index], "\n")
+        print("ID:", iden[index], "\n")
+        print("Quantidade:", qtdProd[index], "\n")
+        print("Equipe:", prodEquipe[index], "\n")
+        print("Veículo:", prodVeiculo[index], "\n")
+        print("Piloto:", prodPiloto[index], "\n")
+        print("Velocidade:", prodVelocidade[index], "\n")
+        print("Corrida:", prodCorrida[index], "\n")
+        print("Pista:", prodPista[index], "\n")
+        print("Volta mais rápida:", prodVolta[index], "\n")
     else:
         print('Produto não listado')
-
