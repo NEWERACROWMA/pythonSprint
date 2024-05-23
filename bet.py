@@ -1,10 +1,10 @@
 from funcoes import obter_aposta, obter_resposta, Escolha
 
-equipes = ['Mahindra Racing', 'Jaguar TCS Racing', 'Maserati MSG Racing', 'Nissan Formula E Team']
+'''equipes = ['Mahindra Racing', 'Jaguar TCS Racing', 'Maserati MSG Racing', 'Nissan Formula E Team']
 Mahindra_corredores = ['Edoardo Mortara','Nick De Vries']
 Jaguar_corredores = ['Mitch Evans','Nick Cassidy']
 Maserati_corredores = ['Jehan Daruvala','Maximilian Gunther'] 
-Nissan_corredores = ['Oliver Rowland','Sacha fenestraz']
+Nissan_corredores = ['Oliver Rowland','Sacha fenestraz']'''
 
 print("Bem vindo à nossa aba de apostas da Formula-E!")
 
@@ -20,8 +20,9 @@ while True:
     print(f"O seu total apostado até agora: R${total_apostas}")
 
     continuar = input("Deseja fazer outra aposta? (s/n): ").lower()
-    if continuar != 's':
+    if continuar == 'n':
         break
+    
 
 print("Fim das apostas. Obrigado por jogar!")
 resposta = obter_resposta()
