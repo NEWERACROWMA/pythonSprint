@@ -1,31 +1,9 @@
-'''equipes = ['Mahindra Racing', 'Jaguar TCS Racing', 'Maserati MSG Racing', 'Nissan Formula E Team']
-
-
-print("Bem vindo à nossa aba de apostas da Formula-E, nome")
-
-while True:
-    resposta = input(f"Em qual equipe você deseja apostar?\n-{equipes[0]}\n-{equipes[1]}\n-{equipes[2]}\n-{equipes[3]}\n--> ")
-    if resposta not in equipes:
-        print ("Essa equipe não existe, escolha uma opção válida")
-    else:
-        break
-
-while True:
-    aposta_inicial = input("Quanto você deseja apostar?\n--> ")
-    if aposta_inicial.isnumeric():
-        aposta_inicial = int(aposta_inicial)
-        break
-    else:
-        print ("Você não digitou um valor válido, por favor digite apenas números")
-
-print(f"Sua aposta foi na equipe {resposta} e o valor apostado foi de R${aposta_inicial}.\nBoa sorte!!")
-
-while True:
-    apostar_dnv = input("Deseja apostar novamente?(Sim/Não)\n-->")
-    if apostar_dnv == 'Sim':
-
-'''
 equipes = ['Mahindra Racing', 'Jaguar TCS Racing', 'Maserati MSG Racing', 'Nissan Formula E Team']
+Mahindra_corredores = ['Edoardo Mortara','Nick De Vries']
+Jaguar_corredores = ['Mitch Evans','Nick Cassidy']
+Maserati_corredores = ['Jehan Daruvala','Maximilian Gunther'] 
+Nissan_corredores = ['Oliver Rowland','Sacha fenestraz']
+
 
 def obter_resposta():
     while True:
@@ -45,7 +23,24 @@ def obter_aposta():
 
 print("Bem vindo à nossa aba de apostas da Formula-E!")
 
+total_apostas = 0
+
+while True:
+    resposta = obter_resposta()
+    aposta_inicial = obter_aposta()
+    
+    total_apostas += aposta_inicial
+
+    print(f"Você apostou na equipe {resposta} e o valor apostado foi de R${aposta_inicial}.")
+    print(f"O seu total apostado até agora: R${total_apostas}")
+
+    continuar = input("Deseja fazer outra aposta? (s/n): ").lower()
+    if continuar != 's':
+        break
+
+print("Fim das apostas. Obrigado por jogar!")
 resposta = obter_resposta()
 aposta_inicial = obter_aposta()
 
 print(f"Sua aposta foi na equipe {resposta} e o valor apostado foi de R${aposta_inicial}.")
+
