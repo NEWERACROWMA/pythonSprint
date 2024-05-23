@@ -13,7 +13,7 @@ else:
     for i, produto in enumerate(listaProdutos, start=1):
         print(f'{i}. {produto}\n')
         i += 1
-    opcNft = Escolha(iden,'Deseja visualizar algum dos NFTs?\nSelecione -> ')
+    opcNft = Escolha(iden,'Qual NFT você deseja visualizar?\nSelecione -> ')
 
     if opcNft in produto_dict:
         index = iden.index(opcNft)  # Obtém o índice do NFT selecionado
