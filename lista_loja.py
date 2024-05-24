@@ -35,6 +35,8 @@ prodCodigo = ['8*&7$2%_1%$;{!#=9&5 +|}1|4&5( ;:8=^#($1~<*9>#| _+9$%&8=~4^&5}3:| 
 
 opcoes1 = ['continuar', 'sair']
 opcoes2 = ['sim', 'nao']
+opcoes3 = ['1','2', '3','4']
+opcoes4 = ['1','2']
 
 
 #PREÇO
