@@ -1,6 +1,7 @@
+print("Bem vindo à nossa aba de apostas da Formula-E!")
+
 from funcao_BET import adicionar_aposta, exibir_resumo, perguntar_continuar, perguntar_corredores,perguntar_continuar_corredores, adicionar_aposta_corredor, apostar_corredor, exibir_resumo_corredores
 
-print("Bem vindo à nossa aba de apostas da Formula-E!")
 
 total_apostas = 0
 apostas = {}
