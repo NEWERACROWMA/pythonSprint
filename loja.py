@@ -1,9 +1,9 @@
 from funcao_loja import Escolha
-from lista_loja import listaProdutos, iden, produto_dict, qtdProd, opcoes
-from lista_loja import prodCorrida, prodEquipe, prodPiloto, prodPista, prodVeiculo, prodVelocidade, prodVolta
+from lista_loja import listaProdutos, iden, produto_dict, qtdProd, opcoes1, opcoes2
+from lista_loja import prodCorrida, prodEquipe, prodPiloto, prodPista, prodVeiculo, prodVelocidade, prodVolta, prodCodigo
 
 print('Olá, bem vindo a nossa Loja Virtual!')
-opc = Escolha(opcoes, 'Você deseja continuar ou voltar para a tela inicial? \n(continuar/sair) -> ')
+opc = Escolha(opcoes1, 'Você deseja continuar ou voltar para a tela inicial? \n(continuar/sair) -> ')
 
 if opc == "sair":
     #AJUSTAR ISSO PARA VOLTAR PARA O MAIN
@@ -17,6 +17,7 @@ else:
 
     if opcNft in produto_dict:
         index = iden.index(opcNft)  # Obtém o índice do NFT selecionado
+
         print("----- INFORMAÇÕES DO NFT -----")
         print("NFT:", listaProdutos[index], "\n")
         print("ID:", iden[index], "\n")
@@ -28,5 +29,12 @@ else:
         print("Corrida:", prodCorrida[index], "\n")
         print("Pista:", prodPista[index], "\n")
         print("Volta mais rápida:", prodVolta[index], "\n")
+        print("CÓDIGO ÚNICO: ", '****************', "\n")
+
+        ver = Escolha(opcoes2, 'Você deseja visualizar o código do Produto NFT?: \n(sim/nao) ->')
+        if ver == 'sim':
+            print("\n-------- CÓDIGO ÚNICO --------\n\n",prodCodigo[index],"\n\nEste Produto é identificado como um 'Non-fungible token' (NFT), ele possui um ID único.\n\nEsses tokens são utilizados em sistemas digitais para representar propriedade única e indivisível de ativos digitais, como arte digital, colecionáveis, entre outros.")
+            
+
     else:
         print('Produto não listado')
