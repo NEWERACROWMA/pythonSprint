@@ -1,3 +1,5 @@
+from desenho import colored_art1, colored_art2
+
 listaProdutos = ['NFT1', 'NFT2', 'NFT3']
 
 iden = ['1', '2', '3']
@@ -17,6 +19,8 @@ prodCorrida = ['E-Prix de Mônaco 2019 (Vergne venceu a corrida)','E-Prix de Ber
 prodPista = ['Circuito de Mônaco','Tempelhof Airport Street Circuit (Berlim)','Autódromo Hermanos Rodríguez (Cidade do México)']
 
 prodVolta = ['52.385 segundos', '1:08.202 minutos', '1:08.200 minutos']
+
+prodDesenho = [colored_art1, colored_art2]
 
 produto_dict = dict(zip(iden, listaProdutos))
 
