@@ -35,3 +35,24 @@ prodCodigo = ['8*&7$2%_1%$;{!#=9&5 +|}1|4&5( ;:8=^#($1~<*9>#| _+9$%&8=~4^&5}3:| 
 
 opcoes1 = ['continuar', 'sair']
 opcoes2 = ['sim', 'nao']
+
+
+#PREÇO
+
+precoEquipe = ['10', '9', '8']
+
+precoVeiculo = ['5', '5', '5']
+
+precoPiloto = ['10', '9', '8']
+
+precoCorrida = ['10', '9', '8']
+
+precoCircuito = ['10', '9', '8']
+
+precoTmpvolta = ['10', '8', '9']
+
+precoPontos = ['55', '49', '46']
+
+precoBase = ['$100', '$100', '$100']
+
+precoFinal = ['$5500', '$4900', '$4600']
