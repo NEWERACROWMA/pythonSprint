@@ -1,4 +1,5 @@
 from funcao_loja import Escolha
+from desenho import colored_art
 from lista_loja import listaProdutos, iden, produto_dict, qtdProd, opcoes1, opcoes2
 from lista_loja import prodCorrida, prodEquipe, prodPiloto, prodPista, prodVeiculo, prodVelocidade, prodVolta, prodCodigo
 
@@ -30,11 +31,12 @@ else:
         print("Pista:", prodPista[index], "\n")
         print("Volta mais rápida:", prodVolta[index], "\n")
         print("CÓDIGO ÚNICO: ", '****************', "\n")
+        print("Sua representação em ACII:\n\n", colored_art)
 
+        vizu = Escolha(opcoes2, 'Você deseja vizualizar o preço?')
         ver = Escolha(opcoes2, 'Você deseja visualizar o código do Produto NFT?: \n(sim/nao) ->')
         if ver == 'sim':
-            print("\n-------- CÓDIGO ÚNICO --------\n\n",prodCodigo[index],"\n\nEste Produto é identificado como um 'Non-fungible token' (NFT), ele possui um ID único.\n\nEsses tokens são utilizados em sistemas digitais para representar propriedade única e indivisível de ativos digitais, como arte digital, colecionáveis, entre outros.")
+            print("\n-------- CÓDIGO ÚNICO --------\n\n",prodCodigo[index],"\n\nEste Produto é identificado como um 'Non-fungible token' (NFT), ele possui um ID único.\nEsses tokens são utilizados em sistemas digitais para representar propriedade única e indivisível de ativos digitais, como arte digital, colecionáveis, entre outros.\n\n")
             
-
     else:
         print('Produto não listado')
