@@ -3,7 +3,7 @@ SPRINT 1 dedicada a matéria de Computitional Thinking with Python
 
 ## Nome e RM:
 
-#### Caio Felipe de Lima Bezerra 
+#### Caio Felipe de Lima Bezerra | 556197
 
 #### Gabriel Terra Lilla dos Santos | 554575
 
