@@ -6,5 +6,3 @@ def Escolha(lista_opcoes, msg):
         print('Escolha uma opção válida\n\n')
         escolha = input(msg)
     return escolha
-
-

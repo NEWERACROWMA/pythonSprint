@@ -25,11 +25,12 @@ def exibir_menu(idade):
     print('1. Sobre')
     print('2. BET')
     print('3. Loja')
+    print('4. Sair do site')
     while True:
         escolha = input('Digite o número da opção desejada: ')
         if escolha.isnumeric():
             escolha = int(escolha)
-            if escolha in [1, 2, 3]:
+            if escolha in [1, 2, 3, 4]:
                 if escolha == 2 and idade < 18:
                     print('Você não tem permissão para acessar a opção BET.')
                 else:

@@ -20,9 +20,10 @@ def main():
         elif escolha == 3:
             print('Você escolheu Loja.')
             import loja
-            loja.executar()
-        if not continuar_executando:
+            continuar_executando = loja.executar()
+        elif escolha == 4:
             print("Encerrando o programa. Obrigado por usar nosso site.")
+            continuar_executando = False
             break
 
 if __name__ == "__main__":
