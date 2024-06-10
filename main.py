@@ -21,9 +21,8 @@ def main():
             print('Você escolheu Loja.')
             import loja
             continuar_executando = loja.executar()
-        elif escolha == 4:
+        if not continuar_executando:
             print("Encerrando o programa. Obrigado por usar nosso site.")
-            continuar_executando = False
             break
 
 if __name__ == "__main__":
