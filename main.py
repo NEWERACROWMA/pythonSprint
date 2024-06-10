@@ -13,7 +13,9 @@ def main():
             break
         elif escolha == 2:
             print('Você escolheu BET.')
-            break
+            import bet
+            bet.executar()
+            
         elif escolha == 3:
             print('Você escolheu Loja.')
             break

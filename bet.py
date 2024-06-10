@@ -1,6 +1,9 @@
+from funcao_BET import adicionar_aposta, exibir_resumo, perguntar_continuar
+from lista_BET import equipes, Mahindra_corredores, Jaguar_corredores, Maserati_corredores, Nissan_corredores
+
 print("Bem vindo à nossa aba de apostas da Formula-E!")
 
-from funcao_BET import adicionar_aposta, exibir_resumo, perguntar_continuar
+
 
 # Inicialização das variáveis
 total_apostas = 0
