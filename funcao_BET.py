@@ -75,6 +75,7 @@ def adicionar_aposta_corredor(apostas_corredor, corredores):
     
     if corredor in apostas_corredor:
         apostas_corredor[corredor] += aposta_corredor
+        total_apostas += aposta_corredor
     else:
         apostas_corredor[corredor] = aposta_corredor
 

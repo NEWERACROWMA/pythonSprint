@@ -5,17 +5,17 @@ equipes = [
 ]
 
 Mahindra_corredores = [
-    'Corredor Mahindra 1', 'Corredor Mahindra 2'
+    'Edoardo Mortara', 'Nyck De Vries'
 ]
 
 Jaguar_corredores = [
-    'Corredor Jaguar 1', 'Corredor Jaguar 2'
+    'Mitch Evans', 'Nick Cassidy'
 ]
 
 Maserati_corredores = [
-    'Corredor Maserati 1', 'Corredor Maserati 2'
+    'Maximilian Gunther', 'Jehan Daruvala'
 ]
 
 Nissan_corredores = [
-    'Corredor Nissan 1', 'Corredor Nissan 2'
+    'Oliver Rowland', 'Sacha Fenestraz'
 ]
