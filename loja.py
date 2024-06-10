@@ -64,8 +64,8 @@ def executar():
                     ver3 = Escolha(opcoes4, 'O que deseja fazer?\n\n1. Adicionar ao carrinho\n2. Voltar')
 
                     if ver3 == '1':
-                        carrinho.append(index)  # Adiciona o índice do produto ao carrinho
-                        total_gasto += int(precoFinal[index].strip('$'))  # Atualiza o total gasto
+                        carrinho.append(index)
+                        total_gasto += int(precoFinal[index].strip('$'))  
                         print("Produto adicionado ao carrinho.")
 
                     elif ver3 == '2':
@@ -80,7 +80,7 @@ def executar():
                     encerrar = Escolha(opcoes2, 'Você deseja encerrar a compra e sair da loja?\n(sim/nao) -> ')
                     if encerrar == 'sim':
                         print("Compra encerrada. Obrigado por usar nossa loja!")
-                        print(f"Total gasto: ${total_gasto}")  # Mostra o total gasto
+                        print(f"Total gasto: ${total_gasto}")
                         return True
     
     return True
