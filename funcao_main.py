@@ -1,4 +1,4 @@
-#
+#Funções para operar a página principal, perguntando dados do usuário e o direcionando para a página que desejar
 def obter_dados_usuario():
     nome = input('Diga seu nome: ')
     email = input('Diga seu E-mail: ')
@@ -10,7 +10,7 @@ def obter_dados_usuario():
         else:
             print('Por favor, digite uma idade válida.')
     return nome, email, idade
-#
+
 def confirmar_dados(nome, email, idade):
     while True:
         confirma = input(f'Confirme suas informações: seu nome é {nome}, seu E-mail é {email} e sua idade é {idade}. Está certo? [S/N]: ').upper()
@@ -20,7 +20,7 @@ def confirmar_dados(nome, email, idade):
             return False
         else:
             print('Resposta inválida. Por favor, digite S para sim ou N para não.')
-#
+
 def exibir_menu(idade):
     print('Escolha uma opção:')
     print('1. Sobre')

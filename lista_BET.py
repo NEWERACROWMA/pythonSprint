@@ -1,5 +1,5 @@
 # lista_BET.py
-#
+#lista de equipes e corredores da Formula-E
 equipes = [
     'Mahindra Racing', 'Jaguar TCS Racing', 'Maserati MSG Racing', 'Nissan Formula E Team'
 ]
