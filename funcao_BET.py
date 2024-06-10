@@ -66,20 +66,22 @@ def adicionar_aposta(apostas, total_apostas):
 
     corredores = perguntar_corredores(resposta)
     if corredores:
-        adicionar_aposta_corredor(apostas[resposta]['corredores'], corredores)
+        total_apostas = adicionar_aposta_corredor(apostas[resposta]['corredores'], corredores, total_apostas)
 
     return total_apostas
 
-def adicionar_aposta_corredor(apostas_corredor, corredores):
+def adicionar_aposta_corredor(apostas_corredor, corredores, total_apostas):
     corredor, aposta_corredor = apostar_corredor(corredores)
     
     if corredor in apostas_corredor:
         apostas_corredor[corredor] += aposta_corredor
-        total_apostas += aposta_corredor
     else:
         apostas_corredor[corredor] = aposta_corredor
 
     print(f"Você apostou no corredor {corredor} e o valor apostado foi de R${aposta_corredor}.")
+    total_apostas += aposta_corredor
+    
+    return total_apostas
 
 def exibir_resumo(apostas, total_apostas):
     print("Fim das apostas. Obrigado por jogar!")
@@ -93,8 +95,14 @@ def exibir_resumo(apostas, total_apostas):
     print(f"O valor total apostado foi de R${total_apostas}.")
 
 def perguntar_continuar(tipo):
-    continuar = input(f"Deseja fazer outra aposta nas {tipo}? (s/n): ").lower()
-    return continuar == 's'
+    while True:
+        continuar = input(f"Deseja fazer outra aposta nas {tipo}? (s/n): ").lower()
+        if continuar == 's':
+            return True
+        elif continuar == 'n':
+            return False
+        else:
+            print("Por favor, responda com 's' para sim ou 'n' para não.")
 
 # Inicialização das variáveis
 apostas = {}

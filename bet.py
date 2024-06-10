@@ -2,6 +2,7 @@ from funcao_BET import adicionar_aposta, exibir_resumo, perguntar_continuar
 
 print("Bem-vindo à nossa aba de apostas da Formula-E!")
 
+aposta_corredor = 0
 total_apostas = 0
 apostas = {}
 
