@@ -1,34 +1,54 @@
-# SPRINT 1 | COMPUTITIONAL THINKING WITH PYTHON
-SPRINT 1 dedicada a matéria de Computitional Thinking with Python
+# SPRINT 1 | COMPUTATIONAL THINKING WITH PYTHON
+SPRINT 1 dedicada a matéria de Computational Thinking with Python
 
-## Nome e RM:
+# 🏎️ Sistema de Apostas e Compras
 
-#### Caio Felipe de Lima Bezerra | 556197
+Bem-vindo ao nosso sistema de apostas e compras! Este projeto foi desenvolvido como parte de um trabalho colaborativo para a disciplina de Computational Thinking with Python do curso de Engenharia de Software da Faculdade de Informatica e Administração Paulista (FIAP). O sistema oferece funcionalidades de apostas em equipes de Formula-E e compra de produtos em uma loja virtual.
 
-#### Gabriel Terra Lilla dos Santos | 554575
+## Nome e RM dos Alunos
+- Caio Felipe de Lima Bezerra | 556197
+- Gabriel Terra Lilla dos Santos | 554575
+- Lucas Derenze Simidu | 555931
+- Marcos Vinicius Silva Costa | 555490
+- Ricardo Cerazi Di Tilia | 555155
 
-#### Ricardo Cerazi di Tilia | 555155
+## Sumário
+- [Instalação](#instalação)
+- [Requisitos](#requisitos)
+- [Instruções de Uso](#instruções-de-uso)
+- [Estrutura do Projeto](#estrutura-do-projeto)
 
-#### Marcos Vinicius Silva Costa | 555490
+## Instalação
+Para obter uma cópia local do projeto, basta executar os seguintes comandos em seu terminal:
+git clone https://github.com/NEWERACROWMA/pythonSprint.git
+cd pythonSprint
 
-#### Lucas Derenze Simidu | 555931
+## Requisitos
+- Python 3.6+
+- Sistema Operacional: Qualquer sistema operacional que suporte Python (Windows, macOS, Linux)
+- Este projeto não possui dependências externas.
 
---------------------------------------------------------------------------
+## Instruções de Uso
+Para iniciar o sistema, execute o seguinte comando no terminal dentro do diretório do projeto:
+python main.py
 
-## Detalhes do projeto, instruções de uso, requisitos, dependências e demais infromações.
+Após iniciar o sistema, você terá acesso a um menu com as seguintes opções:
+1. **Sobre**: Informações sobre o sistema e os desenvolvedores.
+2. **Apostas**: Realizar apostas em equipes de Formula-E.
+3. **Loja**: Comprar produtos disponíveis na loja virtual.
+4. **Sair**: Encerrar o programa.
 
-# O que iremos fazer?
+Siga as instruções fornecidas para interagir com cada funcionalidade do sistema.
 
-## 1. Introdução ao Cliente
-### -> Perguntar nome de Usuário, Email e Idade
-
-## 2. BET
-### -> ???
-
-## 3. Loja de NFTs
-### -> Lista com itens e loja de NFTs de corredores e seus carros, com suas estatísticas (ADM?)
-
-
-
-�
+## Estrutura do Projeto
+- **main.py**: Arquivo principal que coordena a execução do sistema.
+- **loja.py**: Implementa a funcionalidade de compra de produtos na loja virtual.
+- **funcao_loja.py**: Contém funções auxiliares necessárias para o funcionamento da loja.
+- **lista_loja.py**: Define listas de produtos disponíveis na loja, seus detalhes e preços.
+- **funcao_main.py**: Contém funções relacionadas à interação com o usuário na função principal `main()`.
+- **lista_BET.py**: Define listas de equipes e corredores disponíveis para apostas no módulo de apostas.
+- **funcao_BET.py**: Implementa a lógica de apostas, incluindo validação de entradas e cálculo de valores.
+- **bet.py**: Implementa a funcionalidade de apostas no sistema.
+- **sobre.py**: Fornece informações sobre o sistema e os desenvolvedores.
+- **desenho.py**: Contém representações artísticas das equipes de Formula-E para fins visuais no sistema.
 
