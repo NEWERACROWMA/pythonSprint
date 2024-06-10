@@ -1,6 +1,6 @@
 import os
 from lista_BET import equipes, Mahindra_corredores, Jaguar_corredores, Maserati_corredores, Nissan_corredores
-
+#
 def Obter_resposta():
     while True:
         resposta = input(f"Em qual equipe você deseja apostar?\n{', '.join(equipes)}\n--> ")
@@ -8,7 +8,7 @@ def Obter_resposta():
             return resposta
         else:
             print("Essa equipe não existe, escolha uma opção válida")
-
+#
 def Obter_times():
     while True:
         aposta = input("Quanto você deseja apostar?\n--> ")
@@ -16,7 +16,7 @@ def Obter_times():
             return int(aposta)
         else:
             print("Você não digitou um valor válido, por favor digite apenas números")
-
+#
 def perguntar_corredores(equipe):
     while True:
         resposta = input(f"Deseja apostar nos corredores da equipe {equipe}? (s/n): ").lower()
@@ -37,7 +37,7 @@ def perguntar_corredores(equipe):
             return None
         else:
             print("Por favor, responda com 's' para sim ou 'n' para não.")
-
+#
 def apostar_corredor(corredores):
     while True:
         corredor = input(f"Em qual corredor você deseja apostar?\n{', '.join(corredores)}\n--> ")
@@ -50,7 +50,7 @@ def apostar_corredor(corredores):
                     print("Por favor, insira um valor numérico válido.")
         else:
             print("Corredor não encontrado. Escolha uma opção válida.")
-
+#
 def adicionar_aposta(apostas, total_apostas):
     resposta = Obter_resposta()
     aposta_inicial = Obter_times()
@@ -70,7 +70,7 @@ def adicionar_aposta(apostas, total_apostas):
         total_apostas = adicionar_aposta_corredor(apostas[resposta]['corredores'], corredores, total_apostas)
 
     return total_apostas
-
+#
 def adicionar_aposta_corredor(apostas_corredor, corredores, total_apostas):
     corredor, aposta_corredor = apostar_corredor(corredores)
     
@@ -83,7 +83,7 @@ def adicionar_aposta_corredor(apostas_corredor, corredores, total_apostas):
     total_apostas += aposta_corredor
     
     return total_apostas
-
+#
 def exibir_resumo(apostas, total_apostas):
     print("Fim das apostas. Obrigado por jogar!")
     
@@ -94,7 +94,7 @@ def exibir_resumo(apostas, total_apostas):
                 print(f"  Corredor: {corredor} - Valor apostado: R${valor}")
 
     print(f"O valor total apostado foi de R${total_apostas}.")
-
+#
 def perguntar_continuar(tipo):
     while True:
         continuar = input(f"Deseja fazer outra aposta nas {tipo}? (s/n): ").lower()

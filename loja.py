@@ -15,7 +15,7 @@ from lista_loja import (
     opcoes2
 )
 from funcao_loja import Escolha
-
+#funções destinadas à exibir detalhes e preços dos produtos da loja 
 def exibir_detalhes_completos(index):
     print(f'Equipe: {prodEquipe[index]}')
     print(f'Veículo: {prodVeiculo[index]}')

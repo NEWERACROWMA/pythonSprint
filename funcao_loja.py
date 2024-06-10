@@ -1,5 +1,5 @@
 # funcao_loja.py
-
+#
 def Escolha(opcoes, prompt):
     while True:
         escolha = input(prompt).strip().lower()

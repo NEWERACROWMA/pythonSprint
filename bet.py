@@ -1,5 +1,5 @@
 from funcao_BET import adicionar_aposta, exibir_resumo, perguntar_continuar
-
+#
 def executar(nome, email, idade):
     print("Bem-vindo à nossa aba de apostas da Formula-E!")
 
