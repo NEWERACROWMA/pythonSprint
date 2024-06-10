@@ -10,7 +10,7 @@ def main():
     while continuar_executando:
         escolha = exibir_menu(idade)
         if escolha == 1:
-            print('Você escolheu Sobre o site.')
+            print('Você escolheu o Sobre do site.')
             import sobre
             continuar_executando = sobre.executar()
         elif escolha == 2:
