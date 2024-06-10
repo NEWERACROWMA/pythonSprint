@@ -20,7 +20,7 @@ Bem-vindo ao nosso sistema de apostas e compras! Este projeto foi desenvolvido c
 
 ## Instalação
 Para obter uma cópia local do projeto, basta executar os seguintes comandos em seu terminal:
-git clone https://github.com/NEWERACROWMA/pythonSprint.git
+[git clone](https://github.com/NEWERACROWMA/pythonSprint.git)
 cd pythonSprint
 
 ## Requisitos
