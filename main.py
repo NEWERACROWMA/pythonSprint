@@ -1,29 +1,26 @@
+# main.py
+
 from funcao_main import obter_dados_usuario, confirmar_dados, exibir_menu
+import bet
+import loja
+import sobre
 
 def main():
     nome, email, idade = obter_dados_usuario()
-    print(f'Bem-vindo ao site, {nome}!')
-    while not confirmar_dados(nome, email, idade):
+    if not confirmar_dados(nome, email, idade):
         nome, email, idade = obter_dados_usuario()
-
-    continuar_executando = True
-    while continuar_executando:
+    
+    while True:
         escolha = exibir_menu(idade)
         if escolha == 1:
-            print('Você escolheu o Sobre do site.')
-            import sobre
-            continuar_executando = sobre.executar()
-        elif escolha == 2:
-            print('Você escolheu BET.')
-            import bet
+            sobre.executar()
+        elif escolha == 2 and idade >= 18:
             bet.executar()
         elif escolha == 3:
-            print('Você escolheu Loja.')
-            import loja
-            continuar_executando = loja.executar()
-        if not continuar_executando:
-            print("Encerrando o programa. Obrigado por usar nosso site.")
+            loja.executar(nome, email, idade)
+        elif escolha == 4:
+            print('Obrigado por visitar o nosso site!')
             break
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
