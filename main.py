@@ -6,21 +6,24 @@ def main():
     while not confirmar_dados(nome, email, idade):
         nome, email, idade = obter_dados_usuario()
 
-    while True:
+    continuar_executando = True
+    while continuar_executando:
         escolha = exibir_menu(idade)
         if escolha == 1:
             print('Você escolheu Sobre o site.')
             import sobre
-            sobre.executar()
+            continuar_executando = sobre.executar()
         elif escolha == 2:
             print('Você escolheu BET.')
             import bet
             bet.executar()
-            
         elif escolha == 3:
             print('Você escolheu Loja.')
             import loja
             loja.executar()
+        if not continuar_executando:
+            print("Encerrando o programa. Obrigado por usar nosso site.")
+            break
 
 if __name__ == "__main__":
     main()
