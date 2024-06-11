@@ -1,5 +1,3 @@
-# main.py
-
 from funcao_main import obter_dados_usuario, confirmar_dados, exibir_menu
 import bet
 import loja
