@@ -15,7 +15,7 @@ from lista_loja import (
     opcoes2
 )
 from funcao_loja import Escolha
-#funções destinadas à exibir detalhes e preços dos produtos da loja 
+
 def exibir_detalhes_completos(index):
     print(f'Equipe: {prodEquipe[index]}')
     print(f'Veículo: {prodVeiculo[index]}')
@@ -40,7 +40,8 @@ def executar(nome, email, idade):
         print(f'Bem-vindo à loja, {nome}!')
         print('Selecione os produtos que deseja comprar:')
         for i in range(len(listaProdutos)):
-            print(f'{i + 1}. {listaProdutos[i]}')
+            if listaProdutos[i] not in produtos_comprados:
+                print(f'{i + 1}. {listaProdutos[i]}')
 
         escolha = input('Digite o número do produto que deseja comprar (ou "sair" para finalizar a compra): ')
 
@@ -52,6 +53,10 @@ def executar(nome, email, idade):
             continue
 
         index = int(escolha) - 1
+
+        if listaProdutos[index] in produtos_comprados:
+            print('Este produto já foi comprado. Escolha outro produto.')
+            continue
 
         exibir_preco_e_desenho(index)
 
