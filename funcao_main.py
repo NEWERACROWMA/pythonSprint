@@ -1,4 +1,3 @@
-#Funções para operar a página principal, perguntando dados do usuário e o direcionando para a página que desejar
 def obter_dados_usuario():
     nome = input('Diga seu nome: ')
     email = input('Diga seu E-mail: ')

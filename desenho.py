@@ -1,4 +1,3 @@
-#aba direcionada a armazenar os dados e detalhes de cada NFT vendida no site
 
 art1 = '''                    __
                _.--""  |

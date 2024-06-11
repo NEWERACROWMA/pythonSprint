@@ -1,6 +1,6 @@
 import os
 from lista_BET import equipes, Mahindra_corredores, Jaguar_corredores, Maserati_corredores, Nissan_corredores
-# Arquivo para operar as apostas nos corredores e equipes específicos 
+
 def Obter_resposta():
     while True:
         resposta = input(f"Em qual equipe você deseja apostar?\n{', '.join(equipes)}\n--> ")

@@ -5,7 +5,6 @@ def executar():
           'Ele tem forte presença em energia renovável, agricultura, logística, hospitalidade e imobiliário. O Grupo Mahindra tem um foco claro em '
           'liderar globalmente o ESG (Environmental, Social, and Governance), capacitar a prosperidade rural e melhorar a vida urbana, com o objetivo de '
           'impulsionar mudanças positivas nas vidas de comunidades e stakeholders para que eles possam se elevarem.')
-# Comdição com opção de voltar para o menu
     while True:
         continuar = input('Deseja voltar para a página principal? (S/N) \n--->').upper()
         if continuar == 'S':

@@ -1,5 +1,3 @@
-# loja.py
-
 from lista_loja import (
     listaProdutos, 
     prodEquipe, 

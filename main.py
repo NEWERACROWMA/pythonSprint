@@ -9,7 +9,6 @@ def main():
     nome, email, idade = obter_dados_usuario()
     if not confirmar_dados(nome, email, idade):
         nome, email, idade = obter_dados_usuario()
-#menu para direcionar o usuário para sua página de interesse
     while True:
         escolha = exibir_menu(idade)
         if escolha == 1:
@@ -27,6 +26,5 @@ def main():
         elif escolha == 4:
             print('Obrigado por visitar o nosso site!')
             break
-#garantir que a função seja executada apenas quando é executada diretamente
 if __name__ == '__main__':
     main()

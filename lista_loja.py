@@ -1,5 +1,5 @@
 from desenho import colored_art1, colored_art2, colored_art3
-#Listas necessárias para efetuar as vendas na aba "loja"
+
 listaProdutos = ['NFT1', 'NFT2', 'NFT3']
 
 iden = ['1', '2', '3']
@@ -39,7 +39,6 @@ opcoes3 = ['1','2', '3','4']
 opcoes4 = ['1','2']
 
 
-#PREÇO
 
 precoEquipe = ['10', '9', '8']
 
