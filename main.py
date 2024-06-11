@@ -14,10 +14,16 @@ def main():
         escolha = exibir_menu(idade)
         if escolha == 1:
             sobre.executar()
-        elif escolha == 2 and idade >= 18:
-            bet.executar()
+        elif escolha == 2:
+            if idade >= 18:
+                bet.executar(nome, email, idade)
+            else:
+                print("Desculpe, você precisa ter 18 anos ou mais para acessar esta seção.")
         elif escolha == 3:
-            loja.executar(nome, email, idade)
+            if idade >= 18:
+                loja.executar(nome, email, idade)
+            else:
+                print("Desculpe, você precisa ter 18 anos ou mais para acessar esta seção.")
         elif escolha == 4:
             print('Obrigado por visitar o nosso site!')
             break
