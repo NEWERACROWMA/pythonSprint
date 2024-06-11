@@ -39,9 +39,15 @@ def executar(nome, email, idade):
     while True:
         print(f'Bem-vindo à loja, {nome}!')
         print('Selecione os produtos que deseja comprar:')
+        produtos_disponiveis = False
         for i in range(len(listaProdutos)):
             if listaProdutos[i] not in produtos_comprados:
                 print(f'{i + 1}. {listaProdutos[i]}')
+                produtos_disponiveis = True
+
+        if not produtos_disponiveis:
+            print("Todos os produtos foram comprados.")
+            break
 
         escolha = input('Digite o número do produto que deseja comprar (ou "sair" para finalizar a compra): ')
 
